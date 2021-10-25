@@ -1,0 +1,62 @@
+# activate spi
+
+## sudo raspi-config
+## Interface options
+## spi enable
+
+# sudo reboot
+
+# install BCM2835 libraries
+## wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.60.tar.gz
+## tar zxvf bcm2835-1.60.tar.gz
+## cd bcm2835-1.60/
+## sudo ./configure
+## sudo make
+## sudo make check
+## sudo make install
+
+# install wiringpi libraries
+## sudo apt-get install wiringpi
+## wget https://project-downloads.drogon.net/wiringpi-latest.deb
+## sudo dpkg -i wiringpi-latest.deb
+## gpio -v
+
+# install python3 libraries
+## sudo apt-get update
+## sudo apt-get install python3-pip
+## sudo apt-get install python3-pil
+## sudo apt-get install python3-numpy
+## sudo pip3 install RPi.GPIO
+## sudo pip3 install spidev
+
+# install lib files
+## sudo apt-get install libopenjp2-7
+## sudo apt install libtiff5
+
+# display test
+## cd ~/e-Paper/RaspberryPi_JetsonNano/
+## python3 epd_2in13_V2_test.py
+
+# copy repo
+## cd ~
+## sudo git clone https://github.com/waveshare/e-Paper
+
+# install requirements
+## cd ~/LightningATM/
+## pip3 install -r requirements.txt
+## sudo apt-get install zbar-tools
+## cd
+## sudo -H apt install python3-picamera
+## sudo -H pip3 install --upgrade picamera[array]
+
+# run once
+## cd ~/LightningATM/
+## ./app.py
+## it quits with an error
+
+# change display and increase timer
+## nano ~/.lightningATM/config.ini
+
+# commenting check_epdsize out
+## nano ~/LightningATM/app.py
+## nano ~/LightningATM/lntxbot.py
