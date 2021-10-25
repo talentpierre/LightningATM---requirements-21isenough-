@@ -1,10 +1,10 @@
 # activate spi
-
 ## sudo raspi-config
 ## Interface options
 ## spi enable
 
-# sudo reboot
+# reboot system
+## sudo reboot
 
 # install BCM2835 libraries
 ## wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.60.tar.gz
