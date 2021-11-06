@@ -32,12 +32,6 @@ wget https://project-downloads.drogon.net/wiringpi-latest.deb
 sudo dpkg -i wiringpi-latest.deb
 gpio -v
 
-# create venv folder and make a venv
-cd
-mkdir venv && cd venv
-python3 -m venv sweet-machine
-source ~/venv/sweet-machine/bin/activate
-
 # install libraries via pip
 pip3 install RPi.GPIO spidev requests qrcode
 
